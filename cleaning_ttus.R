@@ -51,7 +51,7 @@ colnames(df)[2]<-"day"
 
 write.table(df, file='data/ttus1.tsv', sep="\t", row.names = F)
 
-## below I just for the reference
+## below I just kept for the reference
 var act_codes = [
     { code: "010101", "index": "0", "short": "Sleeping", "desc": "Sleeping"},
     { code: "010000", "index": "1", "short": "Personal Care", "desc": "Personal Care"},
@@ -72,6 +72,8 @@ var act_codes = [
     { code: "other", "index": "15", "short": "Other", "desc": "Other"},
     ];
 
+
+## the code below is unused as well, this is for the full data, not a random sample
 library(foreign)
 
 new_df<-read.dta("data/Taiwan_seq.dta")
